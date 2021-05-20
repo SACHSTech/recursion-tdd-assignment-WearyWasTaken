@@ -47,6 +47,13 @@ public class RecursionTest{
       assertEquals(Recursion.count7(1235123498), 0);
 
     }
+
+    @Test
+    public void Test5(){
+
+      assertEquals(Recursion.changePi("xpix"), "x3.14x");
+
+    }
     
     // add more tests
     
