@@ -1,8 +1,8 @@
 package recursionAssignment;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Before;
-import org.junit.jupiter.api.After;
+import org.junit.Before;
+import org.junit.After;
 
 import recursionAssignment.Recursion;
 
@@ -11,6 +11,8 @@ public class RecursionTest{
     @Before
     public void beforeTest(){
       // some steps to perform before tests are run
+
+
     }
     
     /**
@@ -21,6 +23,9 @@ public class RecursionTest{
         // make assertion statement(s)
         // assertEquals(EXPECTEDVALUE, TESTVALUE);
         // assertTrue(TESTBOOLEAN);
+        assertEquals(Recursion.count7(717), 2);
+
+
     }
     
     // add more tests
