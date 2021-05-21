@@ -90,6 +90,19 @@ public class RecursionTest{
 
     }
 
+    @Test
+    public void Test11(){
+
+      assertEquals(Recursion.strCopies("catcowcat", "cow", 2), false);
+
+    }
+
+    @Test
+    public void Test12(){
+
+      assertEquals(Recursion.strCopies("catcowcat", "cow", 1), true);
+
+    }
     
     
     @After

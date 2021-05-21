@@ -77,7 +77,32 @@ public class Recursion{
      */
      public static boolean strCopies(String str, String sub, int n){
 
-        return true;
+        int check;
+
+        //Checks if sub is in the string
+        check = str.indexOf(sub);
+
+        //If it is not found, checks if there are at least n copies of sub in the string
+        if (check == -1){
+
+            boolean nCopies = n <= 0;
+            return nCopies;
+
+        }
+        else{
+
+            //Checks if the next sub is at the end of the string
+            if (check + sub.length() < str.length()){
+                return strCopies(str.substring(check + 1, str.length()), sub, n - 1);
+
+            }
+            else{
+
+                return (n - 1) <= 0;
+
+            }
+
+        }
 
      }
 
