@@ -71,6 +71,14 @@ public class Recursion{
 
     }
 
+    /**
+     * Checks if a string contains a substring a certain amount of times
+     * @author A. Wong
+     */
+     public static boolean strCopies(String str, String sub, int n){
 
+        return true;
+
+     }
 
 }
