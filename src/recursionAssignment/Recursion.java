@@ -38,17 +38,26 @@ public class Recursion{
 
     }
 
+    /**
+     * Replaces all "pi"s in a string with 3.14
+     * @author A. Wong
+     */
     public static String changePi(String str){
 
         int check;
 
+        //Finds the index of the first pi
         check = str.indexOf("pi");
 
+        //If pi was not found, return the string
         if (check == -1){
 
             return str;
 
         }
+
+        //Checks if pi is at the end of string
+        //If it is adds 3.14 to the end of the string
         else if (check + 1 < str.length()){
 
             return str.substring(0,check) + 3.14 + changePi(str.substring(check + 2, str.length()));
