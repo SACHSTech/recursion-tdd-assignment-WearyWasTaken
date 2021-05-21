@@ -40,7 +40,25 @@ public class Recursion{
 
     public static String changePi(String str){
 
-        return "x3.14x";
+        int check;
+
+        check = str.indexOf("pi");
+
+        if (check == -1){
+
+            return str;
+
+        }
+        else if (check + 1 < str.length()){
+
+            return str.substring(0,check) + 3.14 + changePi(str.substring(check + 2, str.length()));
+
+        }
+        else{
+
+            return str.substring(0,check) + 3.14;
+
+        }
 
     }
 

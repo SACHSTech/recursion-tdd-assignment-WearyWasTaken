@@ -54,8 +54,36 @@ public class RecursionTest{
       assertEquals(Recursion.changePi("xpix"), "x3.14x");
 
     }
+
+    @Test
+    public void Test6(){
+
+      assertEquals(Recursion.changePi("xpixxpi"), "x3.14xx3.14");
+
+    }
+
+    @Test
+    public void Test7(){
+
+      assertEquals(Recursion.changePi("pixx"), "3.14xx");
+
+    }
+
+    @Test
+    public void Test8(){
+
+      assertEquals(Recursion.changePi("pipi"), "3.143.14");
+
+    }
+
+    @Test
+    public void Test9(){
+
+      assertEquals(Recursion.changePi("pip"), "3.14p");
+
+    }
+
     
-    // add more tests
     
     @After
     public void afterTest(){
